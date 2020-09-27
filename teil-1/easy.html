@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"> 
+    <head>     
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.prod.js"></script>    
+        <title>More Vue</title> 
+    </head> 
+    <body> 
+        <div id="counter"> 
+            <h1>Counter: {{ counter }}</h1> 
+        </div>   
+    </body> 
+    <script>      
+        const Counter = { 
+            data() { 
+                return { counter: 0 } 
+            }, 
+            mounted() { 
+                setInterval(() => { this.counter++ }, 1000) 
+            } 
+        } 
+        Vue.createApp(Counter).mount('#counter') 
+   </script>
+ </html> 
+
+
+

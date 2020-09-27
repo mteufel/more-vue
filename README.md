@@ -6,6 +6,8 @@ Die HTML-Dateien über einen DevServer wie z.B. "servor" starten:
 
 ```npx servor --reload --browse```
 
+Die Benennung der Dateien entspricht den Vortrags-Slides. 
+
 ## Teil 2
 Die Unterordner sind vollstände Vue-Projekte, die mit Vite erzeugt wurden. Ein den jeweiligen Unterordner wechseln und:
 

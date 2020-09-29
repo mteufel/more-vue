@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     onSelection(selectedValue) {
-      this.$parent.$emit('countryChanged', selectedValue)
+      this.$emit('country-changed', selectedValue)
     }
   }
 }

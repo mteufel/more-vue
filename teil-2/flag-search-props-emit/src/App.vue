@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <AppHeader title="Welcome to Flag Search" />
-    <CountryPanel @countryChanged="countryChanged">
-      <CountrySearch />
+    <CountryPanel>
+      <CountrySearch @country-changed="countryChanged" />
       <CountryFlag :country="country" />
     </CountryPanel>
   </div>

@@ -1,5 +1,5 @@
 # more-vue
-Begleitmaterial zur enterjs 2020 Session "More Vue: Datenfluss, Kommunikation und Komponentenbau"
+Begleitmaterial und Slides zur enterjs 2020-Session "More Vue: Datenfluss, Kommunikation und Komponentenbau"
 
 ## Teil 1
 Die HTML-Dateien über einen DevServer wie z.B. "servor" starten:
@@ -9,9 +9,11 @@ Die HTML-Dateien über einen DevServer wie z.B. "servor" starten:
 Die Benennung der Dateien entspricht den Vortrags-Slides. 
 
 ## Teil 2
-Die Unterordner sind vollstände Vue-Projekte, die mit Vite erzeugt wurden. Ein den jeweiligen Unterordner wechseln und:
+Die Unterordner sind vollständige Vue-Projekte, die mit Vite erzeugt wurden. Einfach in den jeweiligen Unterordner wechseln und:
 
 ```
 npm install
 npm run dev
 ```
+
+Viel Spaß!

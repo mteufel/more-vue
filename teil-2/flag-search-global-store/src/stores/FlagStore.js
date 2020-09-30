@@ -7,6 +7,15 @@ const createFlagStore = () => {
         return await response.json()
     }
 
+    // just a little helper to check if async-await is really blocking
+    const wait = (ms) => {
+        var start = new Date().getTime();
+        var end = start;
+        while(end < start + ms) {
+          end = new Date().getTime();
+       }
+     }
+
     let options = []
     let selectedCountry = 'it'
     let subscribers = []
@@ -17,6 +26,7 @@ const createFlagStore = () => {
         getSelectedCountry: () => selectedCountry,
 
         doSearch: async(search) => {
+            //console.log('Start, ' + new Date().getTime())
             if (search === "") { 
                 return
             }
@@ -25,8 +35,11 @@ const createFlagStore = () => {
                 return { text: `${e.name} (${e.capital})`,
                          value: e.alpha2Code.toLowerCase() }
             })
+            //console.log('vor Wait, ' + new Date().getTime())
+            //wait(1000)  
+            //console.log('End, ' + new Date().getTime())
         },
-
+        
         subscribe: (fn) => {
             subscribers.push(fn)
         },
